@@ -3,6 +3,7 @@
  * webpack.config.js. */
 
 import { defineMessages } from 'react-intl';
+import taxonRecordPlugin from 'cspace-ui-plugin-record-taxon';
 import logo from '../images/logo.jpg';
 import messages from './messages';
 import plugins from './plugins';
@@ -25,5 +26,8 @@ export default () => ({
       version: cspaceUIPluginProfileOMCA.packageVersion,
     },
   },
-  plugins: plugins.map((plugin) => plugin()),
+  plugins: [
+    taxonRecordPlugin(),
+    ...plugins.map((plugin) => plugin()),
+  ],
 });
