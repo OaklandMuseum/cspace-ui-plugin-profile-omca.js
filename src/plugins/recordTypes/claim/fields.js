@@ -1251,6 +1251,11 @@ export default (configContext) => {
             },
           },
         },
+        sortableClaimNumber: {
+          [config]: {
+            cloneable: false,
+          },
+        },
         deaccessionResearchCompleteGroupList: {
           [config]: {
             view: {

@@ -136,6 +136,11 @@ export default (configContext) => {
             },
           },
         },
+        sortableConditionCheckRefNumber: {
+          [config]: {
+            cloneable: false,
+          },
+        },
         assessmentRequestGroupList: {
           [config]: {
             view: {

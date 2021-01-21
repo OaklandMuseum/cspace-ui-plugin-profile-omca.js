@@ -4,6 +4,7 @@ import claim from './claim';
 import collectionobject from './collectionobject';
 import concept from './concept';
 import conditioncheck from './conditioncheck';
+import conservation from './conservation';
 
 export default [
   acquisition,
@@ -12,4 +13,5 @@ export default [
   collectionobject,
   concept,
   conditioncheck,
+  conservation,
 ];

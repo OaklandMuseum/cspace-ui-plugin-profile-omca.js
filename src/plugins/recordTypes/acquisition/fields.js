@@ -78,6 +78,11 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/acquisition/local/omca',
           },
         },
+        sortableAcquisitionReferenceNumber: {
+          [config]: {
+            cloneable: false,
+          },
+        },
         acquisitionContactGroupList: {
           [config]: {
             view: {
