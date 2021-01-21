@@ -843,6 +843,7 @@ export default (configContext) => {
             },
             identDate: {
               [config]: {
+                dataType: DATA_TYPE_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_omca.identDate.fullName',
