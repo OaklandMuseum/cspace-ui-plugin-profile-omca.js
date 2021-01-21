@@ -1251,19 +1251,6 @@ export default (configContext) => {
             },
           },
         },
-        sortableClaimNumber: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.claims_omca.sortableClaimNumber.name',
-                defaultMessage: 'Sortable claim number',
-              },
-            }),
-            view: {
-              type: TextInput,
-            },
-          },
-        },
         deaccessionResearchCompleteGroupList: {
           [config]: {
             view: {

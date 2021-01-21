@@ -971,16 +971,6 @@ export default (configContext) => {
             },
           },
         },
-        sortableObjectNumber: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_omca.sortableObjectNumber.name',
-                defaultMessage: 'Sortable object number',
-              },
-            }),
-          },
-        },
         ipAudit: {
           [config]: {
             messages: defineMessages({

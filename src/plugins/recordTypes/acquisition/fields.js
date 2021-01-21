@@ -78,22 +78,6 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/acquisition/local/omca',
           },
         },
-        sortableAcquisitionReferenceNumber: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.acquisitions_omca.sortableObjectNumber.name',
-                defaultMessage: 'Acquisition reference number',
-              },
-            }),
-            searchTransform: ({ data: referenceNumber }) => (
-              computeSortableIDNumber(referenceNumber)
-            ),
-            view: {
-              type: TextInput,
-            },
-          },
-        },
         acquisitionContactGroupList: {
           [config]: {
             view: {

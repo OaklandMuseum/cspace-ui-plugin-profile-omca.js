@@ -10,6 +10,7 @@ export default {
   'field.collectionobjects_common.objectProductionPerson.fullName': 'Maker name',
   'field.collectionobjects_common.objectProductionPerson.name': 'Name',
   'field.collectionobjects_common.objectProductionPersonRole.fullName': 'Maker role',
-
   'panel.collectionobject.collect': 'Field Collection Information',
+
+  'field.conditionchecks_common.packingRecommendations.name': 'Packing/transportation recommendation',
 };
