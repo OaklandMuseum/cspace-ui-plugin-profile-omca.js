@@ -5,6 +5,7 @@ import collectionobject from './collectionobject';
 import concept from './concept';
 import conditioncheck from './conditioncheck';
 import conservation from './conservation';
+import exhibition from './exhibition';
 
 export default [
   acquisition,
@@ -14,4 +15,5 @@ export default [
   concept,
   conditioncheck,
   conservation,
+  exhibition,
 ];
