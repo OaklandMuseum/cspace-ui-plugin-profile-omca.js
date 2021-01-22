@@ -17,4 +17,16 @@ export default {
   // conditioncheck
 
   'field.conditionchecks_common.packingRecommendations.name': 'Packing/transportation recommendation',
+
+  // loanin
+
+  'field.loansin_common.borrowersContact.fullName': 'OMCA contact',
+  'field.loansin_common.borrowersContact.name': 'OMCA contact',
+  'field.loansin_common.borrowersAuthorizer.fullName': 'OMCA authorizer',
+  'field.loansin_common.borrowersAuthorizer.name': 'OMCA authorizer',
+  'field.loansin_common.borrowersAuthorizationDate.fullName': 'OMCA authorization date',
+  'field.loansin_common.borrowersAuthorizationDate.name': 'OMCA authorization date',
+  'field.loansin_common.loanInConditions.name': 'Loan terms and conditions',
+  'field.loansin_common.loanInNote.name': 'Loan in note',
+  'inputTable.loanin.borrower': 'Internal authorization',
 };
