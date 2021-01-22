@@ -3,6 +3,8 @@ export default {
 
   // collectionobject
 
+  'column.collectionobject.default.objectNumber': 'Object number',
+  'column.collectionobject.narrow.objectNumber': 'Number',
   'field.collectionobjects_common.objectNumber.name': 'Object number',
   'field.collectionobjects_common.distinguishingFeatures.name': 'Curatorial remarks',
   'field.collectionobjects_common.comment.name': 'Inhouse notes',
