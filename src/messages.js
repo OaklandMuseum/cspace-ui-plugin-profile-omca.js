@@ -31,4 +31,16 @@ export default {
   'field.loansin_common.loanInConditions.name': 'Loan terms and conditions',
   'field.loansin_common.loanInNote.name': 'Loan in note',
   'inputTable.loanin.borrower': 'Internal authorization',
+
+  // loanout
+
+  'field.loansout_common.lendersAuthorizer.fullName': 'OMCA authorizer',
+  'field.loansout_common.lendersAuthorizer.name': 'OMCA authorizer',
+  'field.loansout_common.lendersContact.fullName': 'OMCA contact',
+  'field.loansout_common.lendersContact.name': 'OMCA contact',
+  'field.loansout_common.lendersAuthorizationDate.fullName': 'OMCA authorization date',
+  'field.loansout_common.lendersAuthorizationDate.name': 'OMCA authorization date',
+  'field.loansout_common.specialConditionsOfLoan.name': 'Loan terms and conditions',
+  'field.loansout_common.loanOutNote.name': 'Loan out note',
+  'inputTable.loanout.lender': 'Internal authorization',
 };

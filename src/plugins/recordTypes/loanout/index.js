@@ -7,7 +7,7 @@ import messages from './messages';
 export default () => (configContext) => ({
   idGenerators,
   recordTypes: {
-    loanin: {
+    loanout: {
       columns,
       messages,
       fields: fields(configContext),

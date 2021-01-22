@@ -9,6 +9,7 @@ import exhibition from './exhibition';
 import group from './group';
 import intake from './intake';
 import loanin from './loanin';
+import loanout from './loanout';
 
 export default [
   acquisition,
@@ -22,4 +23,5 @@ export default [
   group,
   intake,
   loanin,
+  loanout,
 ];

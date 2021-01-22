@@ -29,15 +29,13 @@ const template = (configContext) => {
           </Col>
         </Cols>
 
-        <Row>
-          <Field name="venueGroupList">
-            <Field name="venueGroup">
-              <Field name="venue" />
-              <Field name="venueOpeningDate" />
-              <Field name="venueClosingDate" />
-            </Field>
+        <Field name="venueGroupList">
+          <Field name="venueGroup">
+            <Field name="venue" />
+            <Field name="venueOpeningDate" />
+            <Field name="venueClosingDate" />
           </Field>
-        </Row>
+        </Field>
 
         <Row>
           <Field name="planningNote" />
