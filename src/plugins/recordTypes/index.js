@@ -6,6 +6,7 @@ import concept from './concept';
 import conditioncheck from './conditioncheck';
 import conservation from './conservation';
 import exhibition from './exhibition';
+import group from './group';
 
 export default [
   acquisition,
@@ -16,4 +17,5 @@ export default [
   conditioncheck,
   conservation,
   exhibition,
+  group,
 ];
