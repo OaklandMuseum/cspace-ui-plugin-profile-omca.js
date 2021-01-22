@@ -10,6 +10,7 @@ import group from './group';
 import intake from './intake';
 import loanin from './loanin';
 import loanout from './loanout';
+import location from './location';
 
 export default [
   acquisition,
@@ -24,4 +25,5 @@ export default [
   intake,
   loanin,
   loanout,
+  location,
 ];

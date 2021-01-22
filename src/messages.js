@@ -43,4 +43,8 @@ export default {
   'field.loansout_common.specialConditionsOfLoan.name': 'Loan terms and conditions',
   'field.loansout_common.loanOutNote.name': 'Loan out note',
   'inputTable.loanout.lender': 'Internal authorization',
+
+  // location
+
+  'field.locations_common.accessNote.name': 'Note',
 };
