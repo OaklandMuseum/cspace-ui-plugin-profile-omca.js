@@ -1,3 +1,4 @@
+import columns from './columns';
 import fields from './fields';
 import forms from './forms';
 import idGenerators from './idGenerators';
@@ -9,6 +10,7 @@ export default () => (configContext) => ({
   optionLists,
   recordTypes: {
     collectionobject: {
+      columns,
       messages,
       fields: fields(configContext),
       forms: forms(configContext),

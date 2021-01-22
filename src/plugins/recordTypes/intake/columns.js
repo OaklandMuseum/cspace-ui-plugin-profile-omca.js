@@ -7,6 +7,9 @@ export default (configContext) => {
 
   return {
     default: {
+      entryNumber: {
+        sortBy: 'intakes_omca:sortableEntryNumber',
+      },
       currentOwner: {
         disabled: true,
       },
