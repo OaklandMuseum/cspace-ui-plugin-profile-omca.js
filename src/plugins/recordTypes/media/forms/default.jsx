@@ -28,18 +28,19 @@ const template = (configContext) => {
           <Col>
             <Field name="identificationNumber" />
             <Field name="originalFileName" subpath="ns2:media_omca" />
-            <Field name="title" />
           </Col>
 
           <Col>
+            <Field name="title" />
+
             <Row>
               <Field name="isPrimary" subpath="ns2:media_omca" />
               <Field name="approveForPublic" subpath="ns2:media_omca" />
             </Row>
 
-            <Field name="publishToList">
+            {/* <Field name="publishToList">
               <Field name="publishTo" />
-            </Field>
+            </Field> */}
           </Col>
         </Cols>
 

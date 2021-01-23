@@ -5,14 +5,12 @@ const template = (configContext) => {
 
   const {
     Panel,
-    Row,
     Cols,
     Col,
   } = configContext.layoutComponents;
 
   const {
     Field,
-    InputTable,
   } = configContext.recordComponents;
 
   return (
@@ -44,7 +42,7 @@ const template = (configContext) => {
         <Field name="exitNote" />
       </Panel>
 
-      <Panel name="deaccessionDisposalInfo" collapsible collapsed>
+      {/* <Panel name="deaccessionDisposalInfo" collapsible collapsed>
         <Row>
           <Field name="displosalNewObjectNumber" />
           <Field name="deaccessionAuthorizer" />
@@ -87,7 +85,7 @@ const template = (configContext) => {
 
         <Field name="displosalProvisos" />
         <Field name="displosalNote" />
-      </Panel>
+      </Panel> */}
     </Field>
   );
 };

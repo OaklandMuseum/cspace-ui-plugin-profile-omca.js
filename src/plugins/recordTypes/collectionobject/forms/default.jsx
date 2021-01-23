@@ -182,12 +182,6 @@ const template = (configContext) => {
                 <Field name="materialComponent" />
               </Field>
             </Field>
-
-            {/* <Field name="copyNumber" /> */}
-
-            {/* <Field name="objectStatusList">
-              <Field name="objectStatus" />
-            </Field> */}
           </Col>
 
           <Col>
@@ -206,20 +200,6 @@ const template = (configContext) => {
                 <Field name="objectComponentInformation" />
               </Field>
             </Field>
-
-            {/* <InputTable name="age">
-              <Field name="ageQualifier" />
-              <Field name="age" />
-              <Field name="ageUnit" />
-            </InputTable> */}
-
-            {/* <Field name="technicalAttributeGroupList">
-              <Field name="technicalAttributeGroup">
-                <Field name="technicalAttribute" />
-                <Field name="technicalAttributeMeasurement" />
-                <Field name="technicalAttributeMeasurementUnit" />
-              </Field>
-            </Field> */}
           </Col>
         </Row>
 
@@ -237,26 +217,9 @@ const template = (configContext) => {
                 <Field name="contentLanguage" />
               </Field>
 
-              {/* <Field name="contentActivities">
-                <Field name="contentActivity" />
-              </Field> */}
-
               <Field name="contentConcepts">
                 <Field name="contentConcept" />
               </Field>
-
-              {/* <Field name="contentDateGroup" /> */}
-
-              {/* <Field name="contentPositions">
-                <Field name="contentPosition" />
-              </Field> */}
-
-              {/* <Field name="contentObjectGroupList">
-                <Field name="contentObjectGroup">
-                  <Field name="contentObject" />
-                  <Field name="contentObjectType" />
-                </Field>
-              </Field> */}
 
               <Field name="contentPlaces">
                 <Field name="contentPlace" />
@@ -264,37 +227,15 @@ const template = (configContext) => {
             </Col>
 
             <Col>
-              {/* <Field name="contentPeoples">
-                <Field name="contentPeople" />
-              </Field> */}
-
               <Field name="contentPersons">
                 <Field name="contentPerson" />
               </Field>
-
-              {/* <Field name="contentScripts">
-                <Field name="contentScript" />
-              </Field> */}
 
               <Field name="contentOrganizations">
                 <Field name="contentOrganization" />
               </Field>
 
               <Field name="argusSubject" subpath="ns2:collectionobjects_omca" />
-
-              {/* <Field name="contentEventNameGroupList">
-                <Field name="contentEventNameGroup">
-                  <Field name="contentEventName" />
-                  <Field name="contentEventNameType" />
-                </Field>
-              </Field> */}
-
-              {/* <Field name="contentOtherGroupList">
-                <Field name="contentOtherGroup">
-                  <Field name="contentOther" />
-                  <Field name="contentOtherType" />
-                </Field>
-              </Field> */}
             </Col>
           </Row>
 
@@ -326,20 +267,9 @@ const template = (configContext) => {
             </Field>
 
             <Field name="argusMade" subpath="ns2:collectionobjects_omca" />
-
-            {/* <Field name="objectProductionReasons">
-              <Field name="objectProductionReason" />
-            </Field> */}
           </Col>
 
           <Col>
-            {/* <Field name="objectProductionPeopleGroupList">
-              <Field name="objectProductionPeopleGroup">
-                <Field name="objectProductionPeople" />
-                <Field name="objectProductionPeopleRole" />
-              </Field>
-            </Field> */}
-
             <Field name="objectProductionPersonGroupList">
               <Field name="objectProductionPersonGroup">
                 <Field name="objectProductionPerson" />
@@ -363,14 +293,6 @@ const template = (configContext) => {
         <Panel name="assoc" collapsible collapsed>
           <Row>
             <Col>
-              {/* <Field name="assocActivityGroupList">
-                <Field name="assocActivityGroup">
-                  <Field name="assocActivity" />
-                  <Field name="assocActivityType" />
-                  <Field name="assocActivityNote" />
-                </Field>
-              </Field> */}
-
               <Field name="assocObjectGroupList">
                 <Field name="assocObjectGroup">
                   <Field name="assocObject" />
@@ -402,14 +324,6 @@ const template = (configContext) => {
                   <Field name="assocOrganizationNote" />
                 </Field>
               </Field>
-
-              {/* <Field name="assocPeopleGroupList">
-                <Field name="assocPeopleGroup">
-                  <Field name="assocPeople" />
-                  <Field name="assocPeopleType" />
-                  <Field name="assocPeopleNote" />
-                </Field>
-              </Field> */}
             </Col>
 
             <Col>
@@ -429,29 +343,6 @@ const template = (configContext) => {
                 </Field>
               </Field>
 
-              {/* <InputTable name="assocEvent">
-                <Field name="assocEventName" />
-                <Field name="assocEventNameType" />
-              </InputTable>
-
-              <Field name="assocEventOrganizations">
-                <Field name="assocEventOrganization" />
-              </Field>
-
-              <Field name="assocEventPeoples">
-                <Field name="assocEventPeople" />
-              </Field>
-
-              <Field name="assocEventPersons">
-                <Field name="assocEventPerson" />
-              </Field>
-
-              <Field name="assocEventPlaces">
-                <Field name="assocEventPlace" />
-              </Field>
-
-              <Field name="assocEventNote" /> */}
-
               <Field name="assocDateGroupList">
                 <Field name="assocDateGroup">
                   <Field name="assocStructuredDateGroup" />
@@ -469,41 +360,6 @@ const template = (configContext) => {
         <Field name="exhibitionHistories" subpath="ns2:collectionobjects_omca">
           <Field name="exhibitionHistory" />
         </Field>
-
-        {/* <Field name="usageGroupList">
-          <Field name="usageGroup">
-            <Field name="usage" />
-            <Field name="usageNote" />
-          </Field>
-        </Field> */}
-
-        {/* <Row>
-          <Col>
-            <Field name="owners">
-              <Field name="owner" />
-            </Field>
-
-            <Field name="ownershipDateGroupList">
-              <Field name="ownershipDateGroup" />
-            </Field>
-          </Col>
-
-          <Col>
-            <Row>
-              <Field name="ownershipAccess" />
-              <Field name="ownershipCategory" />
-            </Row>
-
-            <Field name="ownershipPlace" />
-          </Col>
-        </Row> */}
-
-        {/* <InputTable name="ownershipExchange">
-          <Field name="ownershipExchangeMethod" />
-          <Field name="ownershipExchangeNote" />
-          <Field name="ownershipExchangePriceCurrency" />
-          <Field name="ownershipExchangePriceValue" />
-        </InputTable> */}
 
         <Field name="previousOwnersGroupList" subpath="ns2:collectionobjects_omca">
           <Field name="previousOwnersGroup">
