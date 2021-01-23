@@ -13,6 +13,7 @@ import loanout from './loanout';
 import location from './location';
 import media from './media';
 import movement from './movement';
+import objectexit from './objectexit';
 
 export default [
   acquisition,
@@ -30,4 +31,5 @@ export default [
   location,
   media,
   movement,
+  objectexit,
 ];

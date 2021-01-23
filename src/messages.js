@@ -56,4 +56,8 @@ export default {
   'field.movements_common.inventoryContact.name': 'Inventory by',
   'record.movement.name': 'Location/Inventory',
   'record.movement.collectionName': 'Location/Inventory',
+
+  // objectexit
+
+  'field.objectexit_common.depositor.name': 'Recipient',
 };
