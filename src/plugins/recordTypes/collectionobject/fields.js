@@ -650,16 +650,6 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/collectionobject/local/omca',
           },
         },
-        computedCatalogingSummary: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_omca.computedCatalogingSummary.name',
-                defaultMessage: 'Computed cataloging summary',
-              },
-            }),
-          },
-        },
         argusCount: {
           [config]: {
             messages: defineMessages({

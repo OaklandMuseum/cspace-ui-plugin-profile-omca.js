@@ -47,4 +47,13 @@ export default {
   // location
 
   'field.locations_common.accessNote.name': 'Note',
+
+  // movement
+
+  'field.movements_common.currentLocationFitness.fullName': 'Current location type',
+  'field.movements_common.currentLocationFitness.name': 'Type',
+  'field.movements_common.inventoryContact.fullName': 'Inventory by',
+  'field.movements_common.inventoryContact.name': 'Inventory by',
+  'record.movement.name': 'Location/Inventory',
+  'record.movement.collectionName': 'Location/Inventory',
 };
