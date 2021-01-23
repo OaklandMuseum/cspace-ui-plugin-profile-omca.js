@@ -11,6 +11,7 @@ import intake from './intake';
 import loanin from './loanin';
 import loanout from './loanout';
 import location from './location';
+import media from './media';
 
 export default [
   acquisition,
@@ -26,4 +27,5 @@ export default [
   loanin,
   loanout,
   location,
+  media,
 ];
