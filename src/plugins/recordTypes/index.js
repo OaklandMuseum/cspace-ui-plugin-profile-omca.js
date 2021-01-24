@@ -16,6 +16,7 @@ import media from './media';
 import movement from './movement';
 import objectexit from './objectexit';
 import organization from './organization';
+import person from './person';
 
 export default [
   acquisition,
@@ -36,4 +37,5 @@ export default [
   movement,
   objectexit,
   organization,
+  person,
 ];
