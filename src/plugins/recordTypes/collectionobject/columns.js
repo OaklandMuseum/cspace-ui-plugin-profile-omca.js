@@ -12,7 +12,7 @@ export default {
       messages: defineMessages({
         label: {
           id: 'column.collectionobject.default.computedCatalogingSummary',
-          defaultMessage: 'Summary',
+          defaultMessage: 'Name - Taxon - Maker',
         },
       }),
       order: 20,
@@ -31,7 +31,7 @@ export default {
       messages: defineMessages({
         label: {
           id: 'column.collectionobject.narrow.computedCatalogingSummary',
-          defaultMessage: 'Summary',
+          defaultMessage: 'Name - Taxon - Maker',
         },
       }),
       order: 20,

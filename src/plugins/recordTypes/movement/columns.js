@@ -12,7 +12,7 @@ export default {
       messages: defineMessages({
         label: {
           id: 'column.movement.default.computedMovementSummary',
-          defaultMessage: 'Summary',
+          defaultMessage: 'Location - Reason',
         },
       }),
       order: 30,
