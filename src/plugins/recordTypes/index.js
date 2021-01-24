@@ -17,6 +17,7 @@ import movement from './movement';
 import objectexit from './objectexit';
 import organization from './organization';
 import person from './person';
+import place from './place';
 
 export default [
   acquisition,
@@ -38,4 +39,5 @@ export default [
   objectexit,
   organization,
   person,
+  place,
 ];
