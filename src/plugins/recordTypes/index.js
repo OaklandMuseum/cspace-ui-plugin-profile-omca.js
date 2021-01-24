@@ -18,6 +18,7 @@ import objectexit from './objectexit';
 import organization from './organization';
 import person from './person';
 import place from './place';
+import restrictedmedia from './restrictedmedia';
 
 export default [
   acquisition,
@@ -40,4 +41,5 @@ export default [
   organization,
   person,
   place,
+  restrictedmedia,
 ];

@@ -1,3 +1,5 @@
+import { defineMessages } from 'react-intl';
+
 const template = (configContext) => {
   const {
     React,
@@ -25,15 +27,15 @@ const template = (configContext) => {
         <Cols>
           <Col>
             <Field name="identificationNumber" />
-            <Field name="originalFileName" subpath="ns2:media_omca" />
+            <Field name="originalFileName" subpath="ns2:restrictedmedia_omca" />
           </Col>
 
           <Col>
             <Field name="title" />
 
             <Row>
-              <Field name="isPrimary" subpath="ns2:media_omca" />
-              <Field name="approveForPublic" subpath="ns2:media_omca" />
+              <Field name="isPrimary" subpath="ns2:restrictedmedia_omca" />
+              <Field name="approveForPublic" subpath="ns2:restrictedmedia_omca" />
             </Row>
 
             {/* <Field name="publishToList">
@@ -89,5 +91,11 @@ const template = (configContext) => {
 };
 
 export default (configContext) => ({
+  messages: defineMessages({
+    name: {
+      id: 'form.restrictedmedia.default.name',
+      defaultMessage: 'Standard Template',
+    },
+  }),
   template: template(configContext),
 });
