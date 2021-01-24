@@ -5,6 +5,7 @@ import collectionobject from './collectionobject';
 import concept from './concept';
 import conditioncheck from './conditioncheck';
 import conservation from './conservation';
+import contact from './contact';
 import exhibition from './exhibition';
 import group from './group';
 import intake from './intake';
@@ -14,6 +15,7 @@ import location from './location';
 import media from './media';
 import movement from './movement';
 import objectexit from './objectexit';
+import organization from './organization';
 
 export default [
   acquisition,
@@ -23,6 +25,7 @@ export default [
   concept,
   conditioncheck,
   conservation,
+  contact,
   exhibition,
   group,
   intake,
@@ -32,4 +35,5 @@ export default [
   media,
   movement,
   objectexit,
+  organization,
 ];

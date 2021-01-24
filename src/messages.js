@@ -60,4 +60,8 @@ export default {
   // objectexit
 
   'field.objectexit_common.depositor.name': 'Recipient',
+
+  // organization
+
+  'field.organizations_common.dissolutionDateGroup.name': 'Active dates',
 };
