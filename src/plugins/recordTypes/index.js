@@ -19,6 +19,7 @@ import organization from './organization';
 import person from './person';
 import place from './place';
 import restrictedmedia from './restrictedmedia';
+import taxon from './taxon';
 
 export default [
   acquisition,
@@ -42,4 +43,5 @@ export default [
   person,
   place,
   restrictedmedia,
+  taxon,
 ];
