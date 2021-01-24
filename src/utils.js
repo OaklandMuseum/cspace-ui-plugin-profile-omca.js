@@ -1,7 +1,7 @@
 const initialNumberPattern = /^(\d+)(.*)$/;
 const initialLetterPattern = /^(\D+)(.*)$/;
 
-export const computeSortableIDNumber = (referenceNumber) => (
+export const computeSortableIDNumber = (referenceNumber = '') => (
   referenceNumber
     .split('.')
     .map((part) => {
