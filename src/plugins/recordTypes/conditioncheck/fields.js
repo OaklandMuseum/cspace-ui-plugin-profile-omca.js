@@ -300,7 +300,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.conditionchecks_omca.tempRequirement.name',
-                defaultMessage: 'Temperature',
+                defaultMessage: 'Temperature requirement',
               },
             }),
             view: {
@@ -316,7 +316,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.conditionchecks_omca.humidityRequirement.name',
-                defaultMessage: 'Humidity',
+                defaultMessage: 'Humidity requirement',
               },
             }),
             view: {
@@ -332,7 +332,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.conditionchecks_omca.lightRequirement.name',
-                defaultMessage: 'Light',
+                defaultMessage: 'Light requirement',
               },
             }),
             view: {

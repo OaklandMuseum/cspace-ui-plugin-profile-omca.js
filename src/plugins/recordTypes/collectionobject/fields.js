@@ -95,6 +95,12 @@ export default (configContext) => {
         responsibleDepartments: {
           responsibleDepartment: {
             [config]: {
+              searchView: {
+                type: TermPickerInput,
+                props: {
+                  source: 'responsibleDepartment',
+                },
+              },
               view: {
                 type: TermPickerInput,
                 props: {
@@ -658,6 +664,9 @@ export default (configContext) => {
                 defaultMessage: 'Argus count',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {
@@ -1001,6 +1010,9 @@ export default (configContext) => {
                 defaultMessage: 'Argus subject',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {
@@ -1060,6 +1072,9 @@ export default (configContext) => {
                 defaultMessage: 'Argus remarks',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {
@@ -1090,6 +1105,9 @@ export default (configContext) => {
                 defaultMessage: 'Argus made',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {
@@ -1106,6 +1124,9 @@ export default (configContext) => {
                 defaultMessage: 'Argus found and used',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {

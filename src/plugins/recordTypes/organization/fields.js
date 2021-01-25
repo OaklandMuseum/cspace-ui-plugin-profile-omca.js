@@ -77,6 +77,9 @@ export default (configContext) => {
                 defaultMessage: 'Legacy Argus notes',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {
@@ -94,6 +97,9 @@ export default (configContext) => {
                 defaultMessage: 'Legacy parents',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {
@@ -110,6 +116,9 @@ export default (configContext) => {
                 defaultMessage: 'Legacy see also',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {
