@@ -19,15 +19,19 @@ export default (configContext) => {
       },
       {
         op: OP_CONTAIN,
+        path: 'ns2:restrictedmedia_omca/originalFileName',
+      },
+      {
+        op: OP_CONTAIN,
         path: 'ns2:restrictedmedia_common/title',
       },
       {
         op: OP_EQ,
-        path: 'ns2:restrictedmedia_common/creator',
+        path: 'ns2:restrictedmedia_common/contributor',
       },
       {
         op: OP_EQ,
-        path: 'ns2:restrictedmedia_common/languageList/language',
+        path: 'ns2:restrictedmedia_common/creator',
       },
       {
         op: OP_EQ,
