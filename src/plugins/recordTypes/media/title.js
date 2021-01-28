@@ -7,8 +7,8 @@ export default (configContext) => (data) => {
     return '';
   }
 
-  const common = getPart(data, 'restrictedmedia_common');
-  const omca = getPart(data, 'restrictedmedia_omca');
+  const common = getPart(data, 'media_common');
+  const omca = getPart(data, 'media_omca');
 
   const identificationNumber = common && common.get('identificationNumber');
   const title = common && common.get('title');

@@ -5,6 +5,7 @@ import forms from './forms';
 import idGenerators from './idGenerators';
 import messages from './messages';
 import optionLists from './optionLists';
+import title from './title';
 
 export default () => (configContext) => ({
   idGenerators,
@@ -16,6 +17,7 @@ export default () => (configContext) => ({
       advancedSearch: advancedSearch(configContext),
       fields: fields(configContext),
       forms: forms(configContext),
+      title: title(configContext),
     },
   },
 });
