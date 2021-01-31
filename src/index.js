@@ -13,6 +13,7 @@ export default () => ({
   logo,
   messages,
   className: styles.common,
+  defaultAdvancedSearchBooleanOp: 'and',
   prettyUrls: true,
   tenantId: '35',
   pluginInfo: {
