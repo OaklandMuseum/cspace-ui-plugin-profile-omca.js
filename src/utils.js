@@ -26,6 +26,7 @@ export const computeSortableIDNumber = (referenceNumber = '') => (
       return part;
     })
     .join('.')
+    .toUpperCase()
 );
 
 export const joinValues = (values, formatHelpers) => (
