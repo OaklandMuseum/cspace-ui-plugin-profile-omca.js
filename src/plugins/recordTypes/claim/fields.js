@@ -30,6 +30,10 @@ export default (configContext) => {
     Immutable,
   } = configContext.lib;
 
+  const {
+    validateNotInUse,
+  } = configContext.validationHelpers;
+
   return {
     document: {
       [config]: {
@@ -62,6 +66,10 @@ export default (configContext) => {
           [config]: {
             cloneable: false,
             messages: defineMessages({
+              inUse: {
+                id: 'field.claims_common.claimNumber.inUse',
+                defaultMessage: 'The reference number {value} is in use by another record. Please enter a different value.',
+              },
               name: {
                 id: 'field.claims_common.claimNumber.name',
                 defaultMessage: 'Reference number',
@@ -71,6 +79,11 @@ export default (configContext) => {
             searchView: {
               type: TextInput,
             },
+            validate: (validationContext) => validateNotInUse({
+              configContext,
+              validationContext,
+              fieldName: 'claims_common:claimNumber',
+            }),
             view: {
               type: IDGeneratorInput,
               props: {

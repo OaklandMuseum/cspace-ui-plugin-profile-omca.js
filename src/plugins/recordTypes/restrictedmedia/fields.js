@@ -30,6 +30,10 @@ export default (configContext) => {
     Immutable,
   } = configContext.lib;
 
+  const {
+    validateNotInUse,
+  } = configContext.validationHelpers;
+
   return {
     document: {
       [config]: {
@@ -62,6 +66,10 @@ export default (configContext) => {
           [config]: {
             cloneable: false,
             messages: defineMessages({
+              inUse: {
+                id: 'field.restrictedmedia_common.identificationNumber.inUse',
+                defaultMessage: 'The identification number {value} is in use by another record. Please enter a different value.',
+              },
               name: {
                 id: 'field.restrictedmedia_common.identificationNumber.name',
                 defaultMessage: 'Identification number',
@@ -71,6 +79,11 @@ export default (configContext) => {
             searchView: {
               type: TextInput,
             },
+            validate: (validationContext) => validateNotInUse({
+              configContext,
+              validationContext,
+              fieldName: 'restrictedmedia_common:identificationNumber',
+            }),
             view: {
               type: IDGeneratorInput,
               props: {
