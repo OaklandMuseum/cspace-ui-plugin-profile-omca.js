@@ -1,5 +1,10 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber, joinValues } from '../../../utils';
+
+import {
+  computeSortableIDNumber,
+  joinValues,
+  transformSortableIDNumberSearch,
+} from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -71,6 +76,7 @@ export default (configContext) => {
       'ns2:collectionobjects_common': {
         objectNumber: {
           [config]: {
+            searchCompareField: 'ns2:collectionobjects_omca/sortableObjectNumber',
             view: {
               props: {
                 source: 'omcaCatalogingAccession,omcaCatalogingIntake,omcaCatalogingLoanIn,omcaCatalogingLoanInAlt',
@@ -968,6 +974,12 @@ export default (configContext) => {
                 },
               },
             },
+          },
+        },
+        sortableObjectNumber: {
+          [config]: {
+            cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
         ipAudit: {

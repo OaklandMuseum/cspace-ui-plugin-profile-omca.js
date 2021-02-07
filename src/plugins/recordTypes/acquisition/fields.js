@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -40,6 +40,7 @@ export default (configContext) => {
       'ns2:acquisitions_common': {
         acquisitionReferenceNumber: {
           [config]: {
+            searchCompareField: 'ns2:acquisitions_omca/sortableAcquisitionReferenceNumber',
             view: {
               props: {
                 source: 'omcaAccession',
@@ -81,6 +82,7 @@ export default (configContext) => {
         sortableAcquisitionReferenceNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
         acquisitionContactGroupList: {

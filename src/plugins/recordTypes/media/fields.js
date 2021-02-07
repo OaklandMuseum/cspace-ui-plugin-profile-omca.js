@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -42,6 +42,7 @@ export default (configContext) => {
       'ns2:media_common': {
         identificationNumber: {
           [config]: {
+            searchCompareField: 'ns2:media_omca/sortableIdentificationNumber',
             view: {
               props: {
                 source: 'omcaMedia',
@@ -123,6 +124,7 @@ export default (configContext) => {
         sortableIdentificationNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
       },

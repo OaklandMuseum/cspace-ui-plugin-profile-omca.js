@@ -35,3 +35,5 @@ export const joinValues = (values, formatHelpers) => (
     .map((value) => (formatHelpers.formatRefName(value) || value))
     .join(' - ')
 );
+
+export const transformSortableIDNumberSearch = ({ data }) => computeSortableIDNumber(data);

@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -76,6 +76,7 @@ export default (configContext) => {
               },
             }),
             required: true,
+            searchCompareField: 'ns2:restrictedmedia_omca/sortableIdentificationNumber',
             searchView: {
               type: TextInput,
             },
@@ -444,6 +445,7 @@ export default (configContext) => {
         sortableIdentificationNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
       },

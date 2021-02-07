@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -35,6 +35,7 @@ export default (configContext) => {
       'ns2:intakes_common': {
         entryNumber: {
           [config]: {
+            searchCompareField: 'ns2:intakes_omca/sortableEntryNumber',
             view: {
               props: {
                 source: 'intake',
@@ -83,6 +84,7 @@ export default (configContext) => {
         sortableEntryNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
         depositorOMCAGroupList: {

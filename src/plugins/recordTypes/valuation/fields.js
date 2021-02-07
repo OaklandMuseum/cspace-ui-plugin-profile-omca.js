@@ -1,4 +1,8 @@
-import { computeSortableIDNumber, joinValues } from '../../../utils';
+import {
+  computeSortableIDNumber,
+  joinValues,
+  transformSortableIDNumberSearch,
+} from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -43,6 +47,7 @@ export default (configContext) => {
       'ns2:valuationcontrols_common': {
         valuationcontrolRefNumber: {
           [config]: {
+            searchCompareField: 'ns2:valuationcontrols_omca/sortableValuationcontrolRefNumber',
             view: {
               props: {
                 source: 'omcaValuationcontrol',
@@ -79,6 +84,7 @@ export default (configContext) => {
         sortableValuationcontrolRefNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
       },

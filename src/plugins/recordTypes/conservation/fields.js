@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -34,6 +34,11 @@ export default (configContext) => {
         },
       },
       'ns2:conservation_common': {
+        conservationNumber: {
+          [config]: {
+            searchCompareField: 'ns2:conservation_omca/sortableConservationNumber',
+          },
+        },
         treatmentPurpose: {
           [config]: {
             view: {
@@ -53,6 +58,7 @@ export default (configContext) => {
         sortableConservationNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
         dateOfAnalysis: {

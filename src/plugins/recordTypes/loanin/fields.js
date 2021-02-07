@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -43,6 +43,7 @@ export default (configContext) => {
       'ns2:loansin_common': {
         loanInNumber: {
           [config]: {
+            searchCompareField: 'ns2:loansin_omca/sortableLoanInNumber',
             view: {
               props: {
                 source: 'omcaLoanin,omcaCatalogingLoaninAlt',
@@ -83,6 +84,7 @@ export default (configContext) => {
         sortableLoanInNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
         loaninFeesGroupList: {

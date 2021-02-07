@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -74,6 +74,11 @@ export default (configContext) => {
             },
           },
         },
+        conditionCheckRefNumber: {
+          [config]: {
+            searchCompareField: 'ns2:conditionchecks_omca/sortableConditionCheckRefNumber',
+          },
+        },
       },
       'ns2:conditionchecks_omca': {
         [config]: {
@@ -139,6 +144,7 @@ export default (configContext) => {
         sortableConditionCheckRefNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
         assessmentRequestGroupList: {

@@ -1,4 +1,8 @@
-import { computeSortableIDNumber, joinValues } from '../../../utils';
+import {
+  computeSortableIDNumber,
+  joinValues,
+  transformSortableIDNumberSearch,
+} from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -38,6 +42,7 @@ export default (configContext) => {
       'ns2:movements_common': {
         movementReferenceNumber: {
           [config]: {
+            searchCompareField: 'ns2:movements_omca/sortableMovementReferenceNumber',
             view: {
               props: {
                 source: 'omcaLocation,omcaInventory',
@@ -85,6 +90,7 @@ export default (configContext) => {
         sortableMovementReferenceNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
       },

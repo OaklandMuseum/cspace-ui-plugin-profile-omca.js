@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -41,6 +41,7 @@ export default (configContext) => {
       'ns2:exhibitions_common': {
         exhibitionNumber: {
           [config]: {
+            searchCompareField: 'ns2:exhibitions_omca/sortableExhibitionNumber',
             view: {
               props: {
                 source: 'omcaExhibition',
@@ -80,6 +81,7 @@ export default (configContext) => {
         sortableExhibitionNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
         exhibitionSectionOMCAGroupList: {

@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -43,6 +43,7 @@ export default (configContext) => {
       'ns2:loansout_common': {
         loanOutNumber: {
           [config]: {
+            searchCompareField: 'ns2:loansout_omca/sortableLoanOutNumber',
             view: {
               props: {
                 source: 'omcaLoanout',
@@ -83,6 +84,7 @@ export default (configContext) => {
         sortableLoanOutNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
         loanoutExhibitionTitle: {

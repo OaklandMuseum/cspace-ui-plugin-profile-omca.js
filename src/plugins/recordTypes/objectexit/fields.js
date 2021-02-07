@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { computeSortableIDNumber } from '../../../utils';
+import { computeSortableIDNumber, transformSortableIDNumberSearch } from '../../../utils';
 
 export default (configContext) => {
   const {
@@ -38,6 +38,7 @@ export default (configContext) => {
       'ns2:objectexit_common': {
         exitNumber: {
           [config]: {
+            searchCompareField: 'ns2:objectexit_omca/sortableExitNumber',
             view: {
               props: {
                 source: 'omcaObjectexit',
@@ -139,6 +140,7 @@ export default (configContext) => {
         sortableExitNumber: {
           [config]: {
             cloneable: false,
+            searchTransform: transformSortableIDNumberSearch,
           },
         },
       },
