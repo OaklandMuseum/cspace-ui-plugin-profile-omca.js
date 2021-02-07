@@ -68,7 +68,7 @@ export default (configContext) => {
             messages: defineMessages({
               inUse: {
                 id: 'field.restrictedmedia_common.identificationNumber.inUse',
-                defaultMessage: 'The identification number {value} is in use by another record. Please enter a different value.',
+                defaultMessage: 'The identification number {value} is in use by another record.',
               },
               name: {
                 id: 'field.restrictedmedia_common.identificationNumber.name',

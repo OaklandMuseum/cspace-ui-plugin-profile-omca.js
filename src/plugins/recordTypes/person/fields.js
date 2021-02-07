@@ -150,7 +150,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.persons_omca.personsSpecialty.name',
-                  defaultMessage: 'Person\'s specialties',
+                  defaultMessage: 'Person\'s specialty',
                 },
               }),
               repeating: true,

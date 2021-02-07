@@ -68,7 +68,7 @@ export default (configContext) => {
             messages: defineMessages({
               inUse: {
                 id: 'field.claims_common.claimNumber.inUse',
-                defaultMessage: 'The reference number {value} is in use by another record. Please enter a different value.',
+                defaultMessage: 'The reference number {value} is in use by another record.',
               },
               name: {
                 id: 'field.claims_common.claimNumber.name',
@@ -1239,7 +1239,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.claims_omca.noteOnRequest.name',
-                  defaultMessage: 'Notes on requests',
+                  defaultMessage: 'Note on requests',
                 },
               }),
               repeating: true,
@@ -1754,7 +1754,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.claims_omca.claimProcessNote.name',
-                  defaultMessage: 'Notes on claim process',
+                  defaultMessage: 'Note on claim process',
                 },
               }),
               repeating: true,

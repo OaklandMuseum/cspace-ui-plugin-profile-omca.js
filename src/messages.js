@@ -1,5 +1,6 @@
 export default {
-  'about.title': 'CollectionSpace: Oakland Museum of California',
+  'loginForm.title': 'CollectionSpace',
+  'loginForm.prompt': 'Please sign in with your museumca.org credentials.',
 
   // collectionobject
 

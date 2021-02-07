@@ -93,6 +93,11 @@ const template = (configContext) => {
               <Field name="deathPlace" />
             </Row>
 
+            <Row>
+              <Field name="activeDatesGroup" subpath="ns2:persons_omca" />
+              <Field name="workLocation" subpath="ns2:persons_omca" />
+            </Row>
+
             <Field name="bioNote" />
 
             <Row>
