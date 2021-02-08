@@ -12,8 +12,19 @@ import styles from '../styles/cspace-ui-plugin-profile/omca.css';
 export default () => ({
   logo,
   messages,
+  altMediaSnapshot: {
+    mediaRecordType: 'restrictedmedia',
+    mediaRecordBlobCsidField: 'ns2:restrictedmedia_common/blobCsid',
+    name: 'restrictedmediaSnapshotPanel',
+    sort: 'originalFileName',
+    titleMessage: {
+      id: 'restrictedmediaSnapshotPanel.title',
+      defaultMessage: 'Media - Restricted',
+    },
+  },
   className: styles.common,
   defaultAdvancedSearchBooleanOp: 'and',
+  mediaSnapshotSort: 'originalFileName',
   prettyUrls: true,
   tenantId: '35',
   pluginInfo: {
