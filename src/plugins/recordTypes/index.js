@@ -20,7 +20,9 @@ import person from './person';
 import place from './place';
 import restrictedmedia from './restrictedmedia';
 import taxon from './taxon';
+import uoc from './uoc';
 import valuation from './valuation';
+import work from './work';
 
 export default [
   acquisition,
@@ -45,5 +47,7 @@ export default [
   place,
   restrictedmedia,
   taxon,
+  uoc,
   valuation,
+  work,
 ];
