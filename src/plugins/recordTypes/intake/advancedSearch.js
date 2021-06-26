@@ -39,7 +39,7 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:intakes_common/depositorGroupList/depositorGroup/depositor',
+        path: 'ns2:intakes_omca/depositorOMCAGroupList/depositorOMCAGroup/depositorOMCA',
       },
       ...extensions.core.advancedSearch,
     ],
