@@ -16,7 +16,7 @@ export default () => ({
     mediaRecordType: 'restrictedmedia',
     mediaRecordBlobCsidField: 'ns2:restrictedmedia_common/blobCsid',
     name: 'restrictedmediaSnapshotPanel',
-    sort: 'originalFileName',
+    sort: 'isPrimary desc',
     titleMessage: {
       id: 'restrictedmediaSnapshotPanel.title',
       defaultMessage: 'Media - Restricted',
@@ -24,7 +24,7 @@ export default () => ({
   },
   className: styles.common,
   defaultAdvancedSearchBooleanOp: 'and',
-  mediaSnapshotSort: 'originalFileName',
+  mediaSnapshotSort: 'isPrimary desc',
   prettyUrls: true,
   tenantId: '35',
   pluginInfo: {

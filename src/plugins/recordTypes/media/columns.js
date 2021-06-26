@@ -19,5 +19,11 @@ export default {
       sortBy: 'media_omca:originalFileName',
       width: 380,
     },
+    isPrimary: {
+      // This column is used only for sorting related media snapshots.
+      // It is disabled so it doesn't appear in search result tables.
+      disabled: true,
+      sortBy: 'media_omca:isPrimary',
+    },
   },
 };
