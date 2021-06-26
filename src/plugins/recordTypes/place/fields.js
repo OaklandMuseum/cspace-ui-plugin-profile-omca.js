@@ -31,7 +31,7 @@ export default (configContext) => {
                 view: {
                   type: TermPickerInput,
                   props: {
-                    source: 'placehistoricalstatus',
+                    source: 'placehistoricalStatus',
                   },
                 },
               },
