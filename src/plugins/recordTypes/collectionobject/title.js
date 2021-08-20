@@ -13,8 +13,9 @@ export default (configContext) => (data) => {
   const omca = getPart(data, 'collectionobjects_omca');
 
   const objectNumber = common && common.get('objectNumber');
+  const title = common && common.getIn(['titleGroupList', 'titleGroup', 0, 'title']);
 
-  const summary = joinValues(
+  const summary = common && omca && joinValues(
     [
       common.getIn([
         'objectNameList',
@@ -38,5 +39,5 @@ export default (configContext) => (data) => {
     configContext.formatHelpers,
   );
 
-  return [objectNumber, summary].filter((part) => !!part).join(' – ');
+  return [objectNumber, title, summary].filter((part) => !!part).join(' – ');
 };
