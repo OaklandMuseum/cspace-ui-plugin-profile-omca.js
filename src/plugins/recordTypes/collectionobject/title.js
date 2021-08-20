@@ -1,3 +1,5 @@
+import { joinValues } from '../../../utils';
+
 export default (configContext) => (data) => {
   const {
     getPart,
@@ -11,7 +13,30 @@ export default (configContext) => (data) => {
   const omca = getPart(data, 'collectionobjects_omca');
 
   const objectNumber = common && common.get('objectNumber');
-  const computedCatalogingSummary = omca && omca.get('computedCatalogingSummary');
 
-  return [objectNumber, computedCatalogingSummary].filter((part) => !!part).join(' – ');
+  const summary = joinValues(
+    [
+      common.getIn([
+        'objectNameList',
+        'objectNameGroup',
+        0,
+        'objectName',
+      ]),
+      omca.getIn([
+        'determinationHistoryGroupList',
+        'determinationHistoryGroup',
+        0,
+        'dhName',
+      ]),
+      common.getIn([
+        'objectProductionPersonGroupList',
+        'objectProductionPersonGroup',
+        0,
+        'objectProductionPerson',
+      ]),
+    ],
+    configContext.formatHelpers,
+  );
+
+  return [objectNumber, summary].filter((part) => !!part).join(' – ');
 };
