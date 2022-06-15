@@ -170,7 +170,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'concept/associated',
+                    source: 'concept/associated,concept/nomenclature',
                   },
                 },
               },
@@ -238,7 +238,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'concept/associated',
+                    source: 'concept/associated,concept/material',
                   },
                 },
               },
